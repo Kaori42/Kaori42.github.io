@@ -113,24 +113,30 @@ function initComparisons() {
 }
 </script>
 <style>
-html,body {
-    font-family: 'Poppins';font-size: 22px;margin: 0px;height:100%;
+html,body{
+    margin:0;
+    height:100%;
+    overflow:hidden;
 }
 img{
-  display:block;
-  width:100%; 
-  height:100%;
-  object-fit: cover;
+    min-height:100%;
+    min-width:100%;
+    height:auto;
+    width:auto;
+    position:absolute;
+    top:-100%; bottom:-100%;
+    left:-100%; right:-100%;
+    margin:auto;
 }
 </style>
 </head>
 <body>
 <div class="img-comp-container">
   <div class="img-comp-img">
-    <img src="720.png" width="1920" height="1080">
+    <img src="720.png" alt="">
   </div>
   <div class="img-comp-img img-comp-overlay">
-    <img src="1080.png" width="1920" height="1080">
+    <img src="1080.png" alt="">
   </div>
 </div>
 
